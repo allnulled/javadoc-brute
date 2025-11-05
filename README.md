@@ -32,3 +32,19 @@ await JavadocBrute.extractComments({
   output: "output.md"
 });
 ```
+
+## Example
+
+```
+/**
+ * 
+ * Esto es un ejemplo que sí será captado como javadoc comment.
+ * 
+ */
+
+/*
+ * 
+ * Esto no será captado.
+ * 
+ */
+```
