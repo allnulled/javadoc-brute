@@ -15,7 +15,7 @@ You can use it by API or command line.
 ### Command line usage
 
 ```bash
-npx @allnulled/javadoc-brute
+npx javadoc-brute
   --include "glob/path/**/*.js"
   --exclude "node_modules/**/*.js"
   --output "REFERENCE.md"
