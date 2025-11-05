@@ -1,6 +1,6 @@
 {
   "name": "@allnulled/javadoc-brute",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Extracts javadoc-like comments and puts them together",
   "main": "javadoc-brute.js",
   "bin": {
