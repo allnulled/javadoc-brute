@@ -36,9 +36,15 @@ const compileArgs = function(argv = process.argv.slice(2)) {
   return result;
 };
 
+const assertion = function(condition, message) {
+  if(!condition) throw new Error(message);
+}
+
 const main = async function () {
   const args = compileArgs();
   const { include: _include, exclude: _exclude, output: _output } = args;
+  assertion(typeof _include !== "undefined", "Parameter «include» must be fulfilled on «javadoc-brute.bin»");
+  assertion(typeof _include !== "boolean", "Parameter «include» must be fulfilled with some value/s on «javadoc-brute.bin»");
   const JavadocBrute = require(javadocPath);
   const allComments = await JavadocBrute.extractComments({
     include: [].concat(_include),
