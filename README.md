@@ -5,7 +5,7 @@ Extracts javadoc-like comments and puts them together.
 ## Installation
 
 ```bash
-npm install -s @allnulles/javadoc-brute
+npm install -s @allnulled/javadoc-brute
 ```
 
 ## Usage
